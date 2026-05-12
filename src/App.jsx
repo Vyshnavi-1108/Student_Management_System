@@ -9,6 +9,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import CreateStudentPage from "./components/CreateStudentPage";
 import EditStudentPage from "./components/EditStudentPage";
 import AiChatPage from "./components/AiChatPage";
+import ChatPage from "./components/ChatPage";
 
 export default function App() {
   return (
@@ -66,11 +67,19 @@ export default function App() {
             </ProtectedRoute>
           }
         />
-        <Route
+        {/*<Route
           path="/ai"
           element={
             <ProtectedRoute>
               <AiChatPage />
+            </ProtectedRoute>
+          }
+        />*/}
+        <Route
+          path="/ai/chat"
+          element={
+            <ProtectedRoute>
+              <ChatPage />
             </ProtectedRoute>
           }
         />

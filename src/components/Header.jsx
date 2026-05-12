@@ -27,8 +27,8 @@ export default function Header() {
         >
           Students
         </NavLink>
-        <NavLink to="/ai" className="sma-nav-link">
-          AI Assistant
+        <NavLink to="/ai/chat" className="sma-nav-link">
+          AI Chat
         </NavLink>
         <button className="sma-btn-logout" onClick={handleLogout}>
           Sign Out

@@ -30,6 +30,9 @@ export default function Header() {
         <NavLink to="/ai/chat" className="sma-nav-link">
           AI Chat
         </NavLink>
+        <NavLink to="/ai/stream" className="sma-nav-link">
+          AI Chat (Stream)
+        </NavLink>
         <button className="sma-btn-logout" onClick={handleLogout}>
           Sign Out
         </button>

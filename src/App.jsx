@@ -10,6 +10,7 @@ import CreateStudentPage from "./components/CreateStudentPage";
 import EditStudentPage from "./components/EditStudentPage";
 import AiChatPage from "./components/AiChatPage";
 import ChatPage from "./components/ChatPage";
+import StreamChatPage from "./components/StreamChatPage";
 
 export default function App() {
   return (
@@ -48,8 +49,6 @@ export default function App() {
           }
         />
 
-        {/* IMPORTANT: /students/new must come BEFORE /students/:id/edit
-            otherwise 'new' would be matched as the :id parameter */}
         <Route
           path="/students/new"
           element={
@@ -80,6 +79,14 @@ export default function App() {
           element={
             <ProtectedRoute>
               <ChatPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/ai/stream"
+          element={
+            <ProtectedRoute>
+              <StreamChatPage />
             </ProtectedRoute>
           }
         />
